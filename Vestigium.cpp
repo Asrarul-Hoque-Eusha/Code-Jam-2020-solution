@@ -19,9 +19,14 @@ int main()
         {
             for(int j=0;j<N;j++)
             {
-                cin>>M[i][j];s.insert(M[i][j]); if(i==j) k+=M[i][j];
+                cin>>M[i][j];
+                s.insert(M[i][j]); 
+                if(i==j) 
+                    k+=M[i][j];
             }
-            if(N!=s.size()) r++;s.clear();
+            if(N!=s.size()) 
+                r++;
+            s.clear();
         }
         for(int j=0;j<N;j++)
         {
@@ -29,7 +34,9 @@ int main()
             {
                 s.insert(M[i][j]);
             }
-            if(N!=s.size()) c++;s.clear();
+            if(N!=s.size()) 
+                c++;
+            s.clear();
         }
         ///
         ///result output:
